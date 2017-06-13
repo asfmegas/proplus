@@ -1,0 +1,178 @@
+body{
+	padding: 0px;
+	background-color: #000;
+}
+
+/* Formatação select */
+select{
+	width: 600px;
+	height: 40px;
+	padding: 5px;
+	background-color: rgba(208, 208, 208, 0.6);
+	border: 0px;
+	border-radius: 10px;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 20px;
+	color: #000;
+	position: fixed;
+	margin-left: 20px;
+	// margin-top: 20px;
+}
+
+/* ScrollBar */
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track-piece {
+    background-color: #EEE;
+    border-left: 1px solid #CCC;
+}
+
+/* Cor do indicador de rolagem */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: rgba(38, 38, 38, 0.4);
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: rgba(38, 38, 38, 0.8);
+}
+
+/* Formatação link */
+a#link1{
+	position: fixed;
+	left: 1300px;
+	top: 10px;
+	color: #ccc;
+	font-weight: bold;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+/* Formatação id cadastro */
+div#cadastro{
+	position: fixed;
+	left: 700px;
+	top: 20px;
+	width: 550px;
+	height: 140px;
+	padding: 10px;
+	background-color: rgba(38, 38, 38, 1);
+	border-radius: 5px;
+}
+
+div#cadastro input{
+	width: 520px;
+	height: 20px;
+	background-color: #000;
+	color: #ccc;
+	padding: 4px;
+	margin: 5px;
+	font-size: 20px;
+}
+
+div#cadastro button{
+	width: 80px;
+	height: 30px;
+	margin: 5px;
+	padding: 4px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	background-color: rgba(38, 38, 38, 0.5);
+	color: #fff;
+	transition: background-color 1s;
+}
+
+div#cadastro button:hover{
+	background-color: #ccc;
+	color: #fff;
+}
+
+.form-span{
+	position: fixed;
+	left: 5px;
+	top: 200px;
+	font-weight: bold;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+.form-span-cor1{
+	color: green;
+}
+
+.form-span-cor2{
+	color: red;
+}
+
+/* div banco */
+div#banco{
+	position: fixed;
+	padding: 10px;
+	top: 250px;
+	left: 10px;
+	color:#ccc;
+	width: 160px;
+	height: 350px;
+	background-color: #ccc;
+}
+
+div#banco a{
+	width: 150px;
+	height: 20px;
+	background-color: #000;
+}
+
+/* Formatação div traducao */
+div#traducao{
+	position: fixed;
+	top: 60px;
+	left: 10px;
+	width: 620px;
+	height: 100px;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 18px;
+	color: #ccc;
+	font-weight: bold;
+	text-align: center;
+	background-color: rgba(38, 38, 38, 1);
+}
+
+/* Formatação div container */
+div#conteiner{
+	width: 1100px;
+	min-height: 900px;
+	margin-top: 160px;
+	margin-left: 160px;
+	color: #000;
+	padding: 10px;
+	// padding: 10px;
+}
+
+
+div#conteiner a{
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ccc;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: rgba(38, 38, 38, 0.6);
+	transition: background-color 0.6s, color 0.6s;
+}
+
+div#conteiner a:hover{
+	background-color: #fff;
+	color: #000;
+}

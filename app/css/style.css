@@ -1,0 +1,629 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+/* Formatação audio */
+audio{
+	position: fixed;
+	top: 10px;
+	left: 1000px;
+}
+
+/* Formatação de butões */
+.button1{
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 0px #000;
+	padding: 5px;
+	width: 120px;
+	border-radius: 3px;
+	border: 0px;
+	cursor: pointer;
+	margin-left: 10px;
+	box-shadow: 0px 0px 0px #000;
+	transition: box-shadow 0.6s;
+}
+
+.button1:hover{
+	box-shadow: -5px -5px 5px #000;
+}
+
+/* Formatação links */
+.link1{
+	text-decoration: none;
+	padding: 6px;
+	font-weight: bold;
+}
+
+.link3{
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+/* Formatação input text */
+.input-padrao{
+	width: 500px;
+	height: 20px;
+	border 0px;
+	border-radius: 3px;
+	margin: 5px;
+	padding: 2px;
+	font-size: 18px;
+	color: white;
+}
+
+/* Formatação padrão */
+.selecao{
+	padding: 5px;
+	margin: 3px;
+}
+
+/* Formatação textarea */
+.textarea1{
+	border: 0px;
+	font-size: 18px;
+	resize: none;
+	padding: 10px;
+}
+
+/* ScrollBar */
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track-piece {
+    background-color: #EEE;
+    border-left: 1px solid #CCC;
+}
+
+/* Cor do indicador de rolagem */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: rgba(38, 38, 38, 0.4);
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: rgba(38, 38, 38, 0.8);
+}
+
+/* Interface */
+div#cabecalho{
+	width: auto;
+	margin-top: 0px;
+	height: 60px;
+}
+
+/* Cabeçalho */
+.proplus{
+	position: fixed;
+	font-size: 28px;
+	font-weight: bold;
+	top: 10px;
+	left: 10px;
+	text-shadow: 4px 4px 10px #fff;
+	word-spacing: 10px;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+
+.proplus-dois{
+	position: fixed;
+	font-size: 50px;
+	font-weight: bold;
+	top: 150px;
+	left: 440px;
+	text-shadow: 4px 4px 10px #fff;
+	word-spacing: 10px;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+
+/* Menu */
+div#menu{
+	position: fixed;
+	width: 1050px;
+	height: 30px;
+	border-radius: 0px 0px 0px 20px;
+	left: 330px;
+	padding: 10px 10px 10px 20px;
+}
+
+.botao-cor{
+	width: 30px;
+	height: 30px;
+	border: 0px;
+	border-radius: 15px;
+	cursor: pointer;
+	box-shadow: 0px 0px 0px #000;
+	transition: box-shadow 0.6s;
+}
+
+.botao-cor:hover{
+	box-shadow: -4px -5px 8px #000;
+}
+
+div#div-cores{
+	position: fixed;
+	top: 10px;
+	left: 850px;
+}
+
+/* Pesquisa Texto */
+div#pesquisa-texto{
+	width: 900px;
+	min-height: 630px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+div#menu-texto{
+	position: fixed;
+	padding: 10px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+div#conteudo-pesquisa{
+	margin-top: 70px;
+}
+
+select#selecao-texto{
+	font-size: 16px;
+	font-weight: bold;
+	padding: 5px;
+	margin-bottom: 10px;
+	width: 220px;
+	border: 0px;
+}
+
+.form-data{
+	font-size: 14px;
+	color: #ccc;
+}
+
+.btnOnlyButton{
+	position: fixed;
+	left: 1160px;
+	top: 10px;
+	width: 120px;
+	height: 30px;
+	border-radius: 3px;
+	border: 0px;
+	cursor: pointer;
+	color: #fff;
+	text-shadow: 1px 1px 2px #000;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/* Pesquisa de Palavras */
+div#pesquisa-palavras{
+	width: 900px;
+	min-height: 630px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+div#menu-palavras{
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.form-palavras{
+	width: 426px;
+	height: 150px
+}
+
+.input-palavras{
+	margin-left: 200px;
+	text-align: center;
+}
+
+div#selecao-palavras a{
+	cursor: pointer;
+	padding: 5px;
+	margin-right: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.p-palavras{
+	text-align: center;
+}
+
+div#radio-palavra-infer{
+	width: 260px;
+	height: 20px;
+	padding: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 5px;
+	margin-top: 7px;
+	margin-left: 310px;
+	margin-bottom: 3px;
+}
+
+div#radio-palavra{
+	width: 260px;
+	height: 20px;
+	padding: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 5px;
+	margin-bottom: 3px;
+}
+
+/* Principal */
+div#principal{
+	width: auto;
+	padding: 10px;
+	min-height: 550px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+div#menu-texto-dois{
+	height: 30px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.principal-textarea{
+	margin-top: 10px;
+	margin-left: 3px;
+	width: 630px;
+	min-height: 550px;
+}
+
+input#titulo-texto{
+	width: 500px;
+	height: 20px;
+	border-radius: 3px;
+	border: 0px;
+	padding: 5px;
+	font-size: 20px;
+	color: #fff;
+}
+
+.radio-texto{
+	padding: 5px;
+	border-radius: 3px;
+	font-weight: bold;
+}
+
+.button-janela{
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 0px #000;
+	padding: 2px;
+	width: 60px;
+	border-radius: 3px;
+	border: 0px;
+	cursor: pointer;
+	margin-left: 10px;
+	box-shadow: 0px 0px 0px #000;
+	transition: box-shadow 0.6s;
+}
+
+.button-janela:hover{
+	box-shadow: -5px -5px 5px #000;
+}
+
+.anotacao{
+	z-index: 0;
+	position: fixed;
+	left: 122px;
+	top: 320px;
+	width: 830px;
+	height: 350px;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: black;
+}
+
+.anotacao-area{
+	width: 810px;
+	height: 330px;
+	font-size: 18px;
+	padding: 10px;
+}
+
+.botao-anotacao{
+	position: fixed;
+	left: 1160px;
+	top: 10px;
+	border-radius: 2px;
+	font-weight: bold;
+	font-size: 18px;
+	text-shadow: 1px 1px 3px #000;
+	text-transform: uppercase;
+	color: #fff;
+	cursor: pointer;
+	width: 120px;
+	height: 30px;
+	border: 0px;
+}
+
+/* Janela única */
+div#janela-unica{
+	position: fixed;
+	width: 1340px;
+	min-height: 700px;
+	border-radius: 5px;
+	padding: 20px;
+	left: 10px;
+	top: 10px;
+}
+
+div#janela-unica textarea{
+	font-size: 24px;
+	font-weight: bold;
+	color: #000;
+	margin-left: 40px;
+	width: 1200px;
+	height: 660px;
+	border-radius: 10px;
+}
+
+div#botao-janela-unica{
+	display: inline-block;
+	width: 350px;
+	margin-left: 830px;
+}
+
+div#botao-janela-unica button{
+	margin-left: 5px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 0px;
+	width: 100px;
+	height: 30px;
+	cursor: pointer;
+	box-shadow: 0px 0px 0px #000;
+	transition: box-shadow 0.6s;
+}
+
+div#botao-janela-unica button:hover{
+	box-shadow: 5px 5px 10px #000;
+}
+
+/* Simples salve - uma frame para ser visualizada sobre
+a frame principal */
+div#simples-salve{
+	position: fixed;
+	border-radius: 10px;
+	width: 700px;
+	height: 40px;
+	left: 620px;
+	top: 130px;
+	padding: 10px;
+}
+
+.sim-botao-exibir{
+	position: fixed;
+	left: 1300px;
+	top: 145px;
+	border-radius: 15px;
+	font-size: 18px;
+	font-weight: bold;
+	border: 0px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.sim-input{
+	padding: 5px;
+	width: 260px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	margin-top: 3px;
+	border: 0px;
+	border-radius: 4px;
+	margin-right: 10px;
+}
+
+.sim-botao-salvar{
+	border-radius: 3px;
+	font-size: 18px;
+	font-weight: bold;
+	border: 0px;
+	width: 100px;
+	height: 30px;
+	margin-top: -2px;
+	cursor: pointer;
+}
+
+.sim-botao-efeito{
+	box-shadow: 0px 0px 0px #000;
+	transition: box-shadow 0.6s;
+}
+
+.sim-botao-efeito:hover{
+	box-shadow: 5px 5px 10px #000;
+}
+
+/* Search Word Content */
+.search-word{
+	position: fixed;
+	left: 975px;
+	top: 190px;
+	border-radius: 10px;
+	width: 350px;
+	height: 480px;
+	padding: 10px;
+}
+
+.search-word-ps2{
+	position: fixed;
+	top: 130px;
+	left: 25px;
+	width: 570px;
+	min-height: 150px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.sea-botao-exibir{
+	position: fixed;
+	left: 1300px;
+	top: 200px;
+	border-radius: 15px;
+	font-size: 18px;
+	font-weight: bold;
+	border: 0px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.sea-word-area{
+	border-radius: 10px;
+	width: 290px;
+	height: 70px;
+}
+
+.sea-word-area-ps2{
+	border-radius: 5px;
+	width: 550px;
+	height: 40px;
+}
+
+.sea-input{
+	width: 300px;
+	border-radius: 5px;
+	border: 0px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	padding: 5px;
+	text-align: center;
+}
+
+.sea-input-ps2{
+	width: 560px;
+	border-radius: 5px;
+	border: 0px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	padding: 5px;
+	text-align: center;
+}
+
+a#sea-word{
+	text-decoration: none;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: #000;
+	padding: 0px;
+}
+p#sea-word-p{
+	padding: 2px;
+	margin-top: 2px;
+	margin-bottom: 0px;
+	cursor: pointer;
+}
+
+.sea-botao-enable{
+	position: fixed;
+	left: 1300px;
+	top: 240px;
+	border-radius: 15px;
+	font-size: 18px;
+	font-weight: bold;
+	border: 0px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.sea-botao-modified{
+	position: fixed;
+	left: 1300px;
+	top: 280px;
+	border-radius: 15px;
+	font-size: 18px;
+	font-weight: bold;
+	border: 0px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+
+.cor-change-search-enable{
+	background-color: rgba(0, 77, 0, 0.4);
+}
+
+.cor-change-search-disable{
+	background-color: rgba(153, 0, 0, 0.4);
+}
+
+/* Formatação div confirmacao */
+div#confirmacao{
+	position: fixed;
+	left: 395px;
+	top: 200px;
+	border-radius: 10px;
+	padding: 8px;
+	width: 550px;
+	min-height: 140px;
+	text-align: center;
+	border: 2px solid rgba(255, 0, 0, 0.8);
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 3px #000;
+	color: #fff;
+}
+
+.option-button{
+	width: 150px;
+	height: 30px;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+	border: 0px;
+	border-radius: 2px;
+	margin: 10px;
+}
+
+/* Rodapé */
+div#rodape{
+	padding-top: 5px;
+	color: rgb(77, 77, 77);
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 10px;
+	width: auto;
+	height: 35px;
+	transition: color 0.6s;
+}
+
+div#rodape:hover{
+	color: rgb(255, 255, 255);
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="proplus">
+<head ng-cloak>
+	<meta charset="UTF-8">
+	<title>Proplus English - Jogos</title>
+	<link rel="stylesheet" href="../css/style-jogos.css">
+</head>
+<body ng-controller="jogosCtrl" ng-cloak>
+	<a id="link1" href="../../index.html">Voltar</a>
+	<div ng-cloak>
+		<select ng-model="origemDefinida" ng-click="selecionarTexto(origemDefinida)" ng-options="texto.titulo for texto in tituloDosTextos | filter:dados.nome | filter:search">
+			<option value="">Selecione uma opção</option>
+		</select>
+
+		<div id="banco" ng-show="false">
+			<button type="button"><<</button>
+			<a href="" ng-repeat="word in wordsScope | filter:palavraSelecionada | filter:'Palavra' | limitTo:10">
+				<p>{{word.nome}}</p>
+			</a>
+		</div>
+
+		<div id="cadastro">
+			<form name="formSalvar">
+				<input type="text" autofocus="true" ng-model="dados.nome" placeholder="Palavra" nd-required="true">
+				<input type="text" ng-model="dados.traducao" placeholder="Tradução" ng-required="true">
+				<button type="button" ng-click="cadastrarNovaPalavra(dados)" ng-disabled="formSalvar.$invalid">Salvar</button>
+				<button type="button" ng-click="apagarDados()">Limpar</button>
+				<span class="form-span" ng-class="corSpan">{{palavraSelecionada}}</span>
+			</form>
+		</div>
+		
+		<br/>
+		<div id="traducao">
+			{{traducaoPalavra}}
+		</div>
+		<div id="conteiner" ng-cloak>
+			<a href="" ng-click="checarPalavra(palavra)" ng-repeat="palavra in arrayPalavrasNaoRepetidas | orderBy:palavra">
+				{{palavra}}
+			</a>
+		</div>
+	</div>
+
+	<script src="../lib/angular/angular.min.js"></script>
+	<script src="../js/app.js"></script>
+	<script src="../js/controllers/jogosCtrl.js"></script>
+	<script src="../js/services/httpAPIServices.js"></script>
+</body>
+</html>

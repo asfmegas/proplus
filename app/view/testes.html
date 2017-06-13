@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="proplus">
+<head>
+	<meta charset="UTF-8">
+	<title>Videos - Proplus English</title>
+	<link rel="stylesheet" href="../css/testes.css">
+</head>
+<body ng-controller="testesCtrl" ng-cloak>
+	<a class="btn-voltar" href="../../index.html">Voltar</a>
+
+	<div id="container">
+<!-- 		<div id="cadastro" ng-hide="true" ng-cloak>
+			<form name="formCadastro" ng-cloak>
+				<input type="text" ng-model="dados.base" autofocus="true" ng-required="true" placeholder="Base">
+				<input type="text" ng-model="dados.tense" ng-required="true" placeholder="Tense">
+				<input type="text" ng-model="dados.participle" ng-required="true" placeholder="Participle">
+				<input type="text" ng-model="dados.translation" ng-required="true" placeholder="Translation">
+				<input type="text" ng-model="dados.phrase" ng-required="true" placeholder="Phrase">
+				<button type="button" ng-disabled="formCadastro.$invalid" ng-click="salvarVerbo(dados)">Salvar</button>
+				<button type="button" ng-disabled="formCadastro.$invalid || !dados._id" ng-click="alterarVerbo(dados)">Alterar</button>
+				<button type="button" ng-click="limparDados()">Limpar</button>
+			</form>
+			<div id="palavras" ng-repeat="verbo in listaVerbos | orderBy:'base'">
+				<a href="#" class="lista-verbos" ng-click="pegarDados(verbo)">{{verbo.base}} -|- {{verbo.tense}} -|- {{verbo.participle}}</a>
+			</div>
+		</div> -->
+
+		<div id="principal">
+			<div class="pontos">{{pointer}}</div>
+			<button type="button" ng-click="chooseVerb()" ng-disabled="!startBtn">Start</button>
+			<!-- <button type="button" ng-click="chooseVerb(dado)">>></button> -->
+			<form name="formVerbs">
+				<table>
+					{{dado}}
+					<tr ng-repeat="verb in verbComplete | limitTo:5">
+						<td class="textos"><span>{{verb.base}}</span></td>
+						<td class="textos"><input type="text" ng-model="dado.tense" ng-show="!dado.isVisibleTense" ng-keyup="checkTense(dado.tense,verb.tense)" placeholder="Tense">
+						<span ng-show="dado.isVisibleTense">{{verb.tense}}</span></td>
+						<td class="textos"><input type="text" ng-model="dado.participle" ng-show="!dado.isVisibleParticiple" ng-keyup="checkParticiple(dado.participle,verb.participle)" placeholder="Patrticiple">
+						<span ng-show="dado.isVisibleParticiple">{{verb.participle}}</span></td>
+						<td class="textos"><span ng-show="dado.isVisibleTense && dado.isVisibleParticiple">{{verb.translation}}</span></td>
+					</tr>
+				</table>
+			</form>
+<!-- 			{{verb}}
+			{{valueCount}} -->
+		</div>
+		<div id="exercicio">
+			
+		</div>
+	</div>
+
+
+
+	<script src="../lib/angular/angular.min.js"></script>
+	<script src="../js/app.js"></script>
+	<script src="../js/controllers/testesCtrl.js"></script>
+	<script src="../js/services/httpAPIServices.js"></script>
+	<script src="../js/services/testesService.js"></script>
+</body>
+</html>
